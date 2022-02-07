@@ -1,0 +1,176 @@
+.film__image{
+	
+	margin-left: 68px;
+}
+.films__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	grid-gap: 50px;
+	padding: 0 20px;
+	
+}
+
+.film{
+	border-radius: 10px;
+}
+.film__overview{
+	/* text-align: center;
+	margin: 0 auto; */
+	margin-bottom: 10px	;
+}
+
+.film__title{
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.film__image{
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.film__time{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.film-genre{
+	list-style-type:none;
+}
+
+.film {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 20px;
+}
+
+
+.films-form{
+	text-align: center; 
+	margin: 0 auto;
+	margin-bottom: 35px;
+	
+}
+
+.add-films-form{
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding-top: 30px;
+}
+
+/*  Adding stayles */
+
+.film-name-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+.film-poster-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+.film-overview-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+.film-date-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+.film-genres-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+
+.add-button{
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 160px;
+	height: 36px;
+	background-color:rgb(95, 125, 201);
+	border: none;
+	
+}
+
+/* Select stayles */
+
+.film-select{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+
+.film-select-sort{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+
+.film-search-input{
+	margin: 0 auto;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 165px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 20%) 0px 2px 8px 0px ;
+}
+
+.films-submit-btn{
+	margin-bottom: 10px;
+	border-radius: 13px;
+	width: 160px;
+	height: 36px;
+	background-color:rgb(95, 125, 201);
+	border: none;
+}
