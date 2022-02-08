@@ -1,18 +1,17 @@
 // Gets elements from DOM
-const elFilmsList = document.querySelector('.films__list');
-const elFilmTemplate = document.querySelector('#film-template').content;
-const elGenreTemplate = document.querySelector('#film-genre-template').content;
-const elFilmsFilterForm = document.querySelector('.films-form');
-const elFilmsSelect = document.querySelector('.film-select');
-const elFilmsSearchInput = document.querySelector('.film-search-input');
-const elFilmSortSelect = document.querySelector('.film-select-sort');
-
-const elAddFilmsForm = document.querySelector('.add-films-form');
-const elAddNewFilmName = document.querySelector('.film-name-input');
-const elAddNewFilmPoster = document.querySelector('.film-poster-input');
-const elAddNewFilmOverview = document.querySelector('.film-overview-input');
-const elAddNewFilmDate = document.querySelector('.film-date-input');
-const elAddNewFilmGenres = document.querySelector('.film-genres-input');
+const elFilmsList = findElement ('.films__list');
+const elFilmTemplate = findElement ('#film-template').content;
+const elGenreTemplate = findElement ('#film-genre-template').content;
+const elFilmsFilterForm = findElement ('.films-form');
+const elFilmsSelect = findElement ('.film-select');
+const elFilmsSearchInput = findElement ('.film-search-input');
+const elFilmSortSelect = findElement ('.film-select-sort');
+const elAddFilmsForm = findElement ('.add-films-form');
+const elAddNewFilmName = findElement ('.film-name-input');
+const elAddNewFilmPoster = findElement ('.film-poster-input');
+const elAddNewFilmOverview = findElement ('.film-overview-input');
+const elAddNewFilmDate = findElement ('.film-date-input');
+const elAddNewFilmGenres = findElement ('.film-genres-input');
 
 
 // Generates array of unique genres
@@ -185,7 +184,7 @@ elFilmsFilterForm.addEventListener('submit', (evt) => {
 // 	var newPokemonWeight = weight.value.trim();
 // 	var newPokemonHeight = height.value.trim();
 // 	var newPokemonUrl = url.value.trim();
-	
+
 // 	var newPokemon = {
 // 		name: newPokemonName,
 // 		type: newPokemonType,
@@ -193,7 +192,7 @@ elFilmsFilterForm.addEventListener('submit', (evt) => {
 // 		height: newPokemonHeight,
 // 		img: newPokemonUrl,
 // 	};
-	
+
 // 	pokemonList.unshift(newPokemon);
 // }
 
@@ -205,7 +204,7 @@ function addNewFilm(title, poster, overview, release_date, genres, addingFilmLis
 	const newFilmRealeaseDate = release_date.value.trim();
 	const newFilmGenres = genres = genres.value.trim();
 	
-
+	
 	const newFilm = {
 		title : newFilmName,
 		poster : newFilmPoster,
@@ -213,14 +212,14 @@ function addNewFilm(title, poster, overview, release_date, genres, addingFilmLis
 		release_date : newFilmRealeaseDate,
 		genres : newFilmGenres.split("."),
 	};
-
+	
 	addingFilmList.unshift(newFilm);
 }
 
 
 const handdleSubmit=(evt=>{
 	evt.preventDefault();
-
+	
 	
 	addNewFilm(elAddNewFilmName, elAddNewFilmPoster, elAddNewFilmOverview, elAddNewFilmDate, elAddNewFilmGenres,films);
 	renderFilms(films, elFilmsList);
@@ -235,9 +234,9 @@ elAddFilmsForm.addEventListener("submit",handdleSubmit)
 
 // function renderNewPokemon(evt) {
 // 	evt.preventDefault();
-	
+
 // 	addNewPokemon(elName, elType, elWeight, elHeight, elUrl, pokemons);
-	
+
 // 	renderPokemon(pokemons);
 // }
 
